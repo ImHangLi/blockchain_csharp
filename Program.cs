@@ -1,5 +1,4 @@
-﻿using System;
-using blockchain_csharp.Code;
+﻿using blockchain_csharp.Code;
 
 namespace blockchain_csharp
 {
@@ -7,6 +6,8 @@ namespace blockchain_csharp
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Welcome to the blockchain demo!");
+
             int difficulty;
             do
             {
@@ -58,7 +59,7 @@ namespace blockchain_csharp
                     case "view":
                         foreach (var block in blockchain.Chain)
                         {
-                            Console.WriteLine($"Index: {block.Index}\n Timestamp: {block.Timestamp}\n Data: {block.Data}\n Hash: {block.Hash}\n PreviousHash: {block.PreviousHash}\n Nonce: {block.Nonce}\n\n");
+                            Console.WriteLine($"Block: {block.Index}\n\tTimestamp: {block.Timestamp}\n\tData: {block.Data}\n\tHash: {block.Hash}\n\tPreviousHash: {block.PreviousHash}\n\tNonce: {block.Nonce}\n");
                         }
                         break;
 
