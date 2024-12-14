@@ -58,7 +58,7 @@ namespace blockchain_csharp
                     case "view":
                         foreach (var block in blockchain.Chain)
                         {
-                            Console.WriteLine($"Index: {block.Index}, Timestamp: {block.Timestamp}, Data: {block.Data}, Hash: {block.Hash}, PreviousHash: {block.PreviousHash}, Nonce: {block.Nonce}");
+                            Console.WriteLine($"Index: {block.Index}\n Timestamp: {block.Timestamp}\n Data: {block.Data}\n Hash: {block.Hash}\n PreviousHash: {block.PreviousHash}\n Nonce: {block.Nonce}\n\n");
                         }
                         break;
 
